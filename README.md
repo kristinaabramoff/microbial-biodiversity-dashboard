@@ -32,6 +32,7 @@ Plots and metadata update dynamically when a new sample is selected.
 
 ### Deployment
 The app was successfully deployed to GitHub Pages. View the deployed app here.
+https://kristinaabramoff.github.io/belly-button-challenge/
 
 ### Files
 index.html
