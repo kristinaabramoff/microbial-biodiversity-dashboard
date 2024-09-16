@@ -1,52 +1,59 @@
-# Belly Button Challenge
+# Microbial Biodiversity Interactive Dashboard
+
+## Executive Summary
+This project demonstrates proficiency in building interactive data visualizations using D3.js and Plotly, while also showcasing web deployment skills through GitHub Pages. The dashboard explores the Belly Button Biodiversity dataset, revealing insights into the microbial species colonizing human navels.
 
 ## Background
-This project involved building an interactive dashboard to explore the Belly Button Biodiversity dataset, which catalogues microbes in human navels. The dataset reveals that a few microbial species (OTUs) were present in more than 70% of people, while others were relatively rare.
+This project involves building an interactive dashboard to explore the Belly Button Biodiversity dataset, which catalogs the microbes found in human navels. The dataset shows that while a small number of microbial species (OTUs) were present in over 70% of individuals, many others were rare.
 
-### Repository Setup
-I created a repository named belly-button-challenge, cloned it, and copied the necessary files (index.html, samples.json, and the static folder) from the StarterCode folder. Changes were pushed to GitHub and the repository was deployed to GitHub Pages.
+## Project Objective
+The objective of this project is to create an interactive dashboard that visualizes data on microbial species found in belly button samples. Users can explore the top 10 OTUs found in each individual and view other data through dynamic bar and bubble charts, as well as sample metadata.
 
-### Implementation
-Data Loading
-D3 library was used to read samples.json from the provided URL.
+## Repository Setup
+- A new repository named **microbial-biodiversity-dashboard** was created.
+- The starter files (`index.html`, `samples.json`, and the `static` folder) were cloned and copied into the local repository.
+- All changes were committed and pushed to GitHub, and the repository was deployed to **GitHub Pages**.
+  - **View the deployed app**: [Microbial Biodiversity Dashboard](https://kristinaabramoff.github.io/belly-button-challenge/)
 
-###  Bar Chart
-A horizontal bar chart with a dropdown menu was created to display the top 10 OTUs found in an individual using:
+## Implementation
 
-sample_values for bar values
-otu_ids for labels
-otu_labels for hovertext
+### Data Loading
+The **D3** library was used to load the `samples.json` file from the provided URL.
+
+### Bar Chart
+A horizontal bar chart was developed to display the top 10 OTUs for a selected individual. It features:
+- **Values**: `sample_values` representing the top 10 OTUs.
+- **Labels**: `otu_ids` displayed as the bar chart labels.
+- **Hovertext**: `otu_labels` shown when hovering over the bars for additional information.
 
 ### Bubble Chart
-A bubble chart was created to display each sample using:
-
-otu_ids for x values and marker colors
-sample_values for y values and marker size
-otu_labels for text values
+A bubble chart was developed to visualize all samples from the dataset. It includes:
+- **X-axis**: `otu_ids` representing the OTU ID numbers.
+- **Y-axis**: `sample_values` representing the sample values.
+- **Marker size**: Proportional to `sample_values`.
+- **Marker color**: Mapped to `otu_ids`.
+- **Hovertext**: `otu_labels` providing more information about each OTU.
 
 ### Metadata Display
-Sample metadata (demographic information) was displayed by looping through each key-value pair from the metadata JSON object and appending it to the #sample-metadata panel.
+The demographic information of the selected individual is dynamically displayed. For each sample, the metadata (age, gender, location, etc.) is updated using a key-value pair loop and appended to the **#sample-metadata** panel.
 
-### Updating Plots
-Plots and metadata update dynamically when a new sample is selected.
+### Plot Updates
+Both the bar chart and bubble chart, along with the metadata display, update dynamically when a new sample is selected from the dropdown menu.
 
-### Deployment
-The app was successfully deployed to GitHub Pages. View the deployed app here.
-https://kristinaabramoff.github.io/belly-button-challenge/
+## Deployment
+The dashboard was successfully deployed to GitHub Pages. The deployed app is accessible [here](https://kristinaabramoff.github.io/belly-button-challenge/).
 
-### Files
-index.html
-samples.json
-static/js/app.js
-static/css/style.css
-Skills and Programs Used
-JavaScript: For building interactive charts and handling data.
-D3.js: For data loading and manipulation.
-Plotly.js: For creating bar and bubble charts.
-HTML/CSS: For structuring and styling the web page.
-Git & GitHub: For version control and deployment.
-GitHub Pages: For hosting the deployed app.
+## Files in this Repository
+- `index.html`: The main HTML file for structuring the dashboard.
+- `samples.json`: The dataset containing the belly button biodiversity data.
+- `static/js/app.js`: Contains the JavaScript code for data loading, chart creation, and interactivity.
+- `static/css/style.css`: CSS file for styling the dashboard.
+
+## Technologies Used
+- **Languages**: JavaScript (D3.js, Plotly.js), HTML, CSS
+- **Tools**: Git, GitHub, GitHub Pages
+- **Frameworks**: D3.js, Plotly.js
 
 ## References
-Hulcr, J. et al. (2012) A Jungle in There: Bacteria in Belly Buttons are Highly Diverse, but Predictable. Retrieved from: http://robdunnlab.com/projects/belly-button-biodiversity/results-and-data/Links to an external site.
+Hulcr, J. et al. (2012) *A Jungle in There: Bacteria in Belly Buttons are Highly Diverse, but Predictable*. Retrieved from: [Rob Dunn Lab](http://robdunnlab.com/projects/belly-button-biodiversity/results-and-data/)
 
