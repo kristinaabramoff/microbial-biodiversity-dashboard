@@ -13,7 +13,7 @@ The objective of this project is to create an interactive dashboard that visuali
 - A new repository named **microbial-biodiversity-dashboard** was created.
 - The starter files (`index.html`, `samples.json`, and the `static` folder) were cloned and copied into the local repository.
 - All changes were committed and pushed to GitHub, and the repository was deployed to **GitHub Pages**.
-  - **View the deployed app**: [Microbial Biodiversity Dashboard](https://kristinaabramoff.github.io/belly-button-challenge/)
+  - **View the deployed app**:  https://kristinaabramoff.github.io/microbial-biodiversity-dashboard/
 
 ## Implementation
 
