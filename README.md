@@ -42,6 +42,10 @@ Both the bar chart and bubble chart, along with the metadata display, update dyn
 
 ## Deployment
 The dashboard was successfully deployed to GitHub Pages. The deployed app is accessible [here](https://kristinaabramoff.github.io/belly-button-challenge/).
+### Example dashboard 
+
+![dashboard](https://github.com/user-attachments/assets/08dae921-73f5-4caf-bce6-209f154c3652)
+
 
 ## Files in this Repository
 - `index.html`: The main HTML file for structuring the dashboard.
